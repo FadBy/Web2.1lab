@@ -3,7 +3,7 @@ const datas = [];
 window.onload = function() {
     $.ajax({
         type: "GET",
-        url: "get_all_rays.php",
+        url: "./get_all_rays.php",
         data: ($(this)).serialize(),
         dataType: "json",
         success: function(data)
@@ -33,7 +33,7 @@ $("#form").submit(function(e) {
         error_message.innerHTML = "Invalid X value";
         document.getElementById("x_input").appendChild(error_message);
     }
-    else if (!form["y"].value || !/^[0-9]+$/.test(form["y"].value)) {
+    else if (!form["y"].value || isNaN(form["y"].value) || (-5 >= parseInt(form["y"].value) || parseInt(form["y"].value) >= 5)) {
         console.log("y invalid");
         error_message.innerHTML = "Invalid Y value";
         document.getElementById("y_input").appendChild(error_message);
@@ -47,7 +47,7 @@ $("#form").submit(function(e) {
         console.log("else");
         $.ajax({
             type: "POST",
-            url: "raycast.php",
+            url: "./raycast.php",
             data: ($(this)).serialize(),
             dataType: "json",
             timeout: 2000,
@@ -57,7 +57,8 @@ $("#form").submit(function(e) {
             },
             error: function(obj, textStatus, errorThrown) {
                 console.log(errorThrown);
-                alert(obj.responseText);
+                console.log(obj);
+                alert(obj);
 
             }
         });
