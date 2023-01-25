@@ -8,7 +8,7 @@ const unitCanvas = canvas.width / 100;
 const rLength = unitCanvas * 33;
 const axisLength = unitCanvas * 90;
 const arrowTipLength = unitCanvas * 5;
-const arrowAngle = Math.PI * 1 / 12;  // in radian
+const arrowAngle = Math.PI / 12;  // in radian
 const markLength = unitCanvas * 2;
 const textDist = unitCanvas * 2;
 const vertTextPos = 1;
@@ -93,3 +93,31 @@ ctx.strokeText("R", oX + rLength - textOffset, oY + horTextPos * (markLength / 2
 ctx.strokeText("x", oX + axisLength / 2 - textOffset, oY + horTextPos * (markLength / 2 + textDist));
 
 ctx.stroke();
+$(document).ready(function() {
+    $("#canvas").click(function (event) {
+        console.log("yes-yes-yes")
+        const x = event.pageX - $(this).position().left - 27,
+            y = event.pageY - $(this).position().top - 27;
+        console.log(document.forms[0]["r"].value);
+        if (x < 5 * unitCanvas || x > 95 * unitCanvas || y < 5 * unitCanvas || y > 95 * unitCanvas) {
+            return;
+        }
+        if (document.forms[0]["r"].value !== undefined) {
+            $.ajax({
+                type: "POST",
+                url: "raycast.php",
+                data: {"x": (x - canvas.width / 2) / rLength * document.forms[0]["r"].value, "y": -(y - canvas.height / 2) / rLength * document.forms[0]["r"].value, "r": document.forms[0]["r"].value},
+
+                dataType: "json",
+                timeout: 2000,
+                success: addRay,
+                error: function(obj, textStatus, errorThrown) {
+                    console.log(errorThrown);
+                    console.log(obj);
+                    alert(textStatus)
+                }
+            });
+        }
+    });
+})
+
