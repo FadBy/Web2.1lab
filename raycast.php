@@ -51,9 +51,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $time_start = microtime(true); 
     date_default_timezone_set("Etc/GMT-3");
     $table = $_SESSION['table'];
-    $x = $_POST["x"];
-    $y = $_POST["y"];
-    $r = $_POST["r"];
+    $x = intval($_POST["x"]);
+    $y = intval($_POST["y"]);
+    $r = intval($_POST["r"]);
     $hitResultBool = cast($x, $y, $r);
     if ($hitResultBool) {
         $hitResult = "hit";

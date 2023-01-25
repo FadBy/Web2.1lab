@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bccadb3-9033-455d-a1aa-bd4ef0193fd9" name="Changes" comment="" />
+    <list default="true" id="311b6e83-7301-4c87-90dc-1e699827b443" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Lab1Sem3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/canvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycast.php" beforeDir="false" afterPath="$PROJECT_DIR$/raycast.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2EPJ7Xw84rS4GTehvMAUaMmlY0f" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2JENZ1lqKEPZEPTi6CfGPNar4eU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -16,18 +29,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Algoses" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Y2Lab3" />
     <property name="settings.editor.selected.configurable" value="vcs.Perforce" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1bccadb3-9033-455d-a1aa-bd4ef0193fd9" name="Changes" comment="" />
-      <created>1662491122497</created>
+      <changelist id="311b6e83-7301-4c87-90dc-1e699827b443" name="Changes" comment="" />
+      <created>1671639333683</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1662491122497</updated>
-      <workItem from="1662491126005" duration="47000" />
+      <updated>1671639333683</updated>
+      <workItem from="1671639335176" duration="8000" />
     </task>
     <servers />
   </component>
